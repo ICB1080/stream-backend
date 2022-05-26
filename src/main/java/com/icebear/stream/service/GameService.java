@@ -73,6 +73,9 @@ public class GameService {
 
         // Define the response handler to parse and return HTTP response body returned from Twitch
         ResponseHandler<String> responseHandler = response -> {
+
+            // anonymous class with lambda expression.
+
             int responseCode = response.getStatusLine().getStatusCode();
             // response code = 200 -> respond successfully
             // do not respond successfully

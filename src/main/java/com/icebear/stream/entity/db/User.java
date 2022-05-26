@@ -19,6 +19,7 @@ public class User implements Serializable {
 
     @Id
     // @Column is used for alias in table
+    // here consider user_id as email-like unique account identifier
     @Column(name = "user_id")
     @JsonProperty("user_id")
     private String userId;
